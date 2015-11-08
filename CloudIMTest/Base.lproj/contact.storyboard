@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DDZ-qU-DFe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DDZ-qU-DFe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--通讯录-->
@@ -27,7 +28,7 @@
         <scene sceneID="D9u-R8-7jP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DDZ-qU-DFe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通讯录" image="user" selectedImage="user_sel" id="e7O-Vk-eFd"/>
+                    <tabBarItem key="tabBarItem" title="通讯录" image="group" selectedImage="group_sel" id="e7O-Vk-eFd"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="aAB-MB-Ywn">
@@ -45,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="user" width="24" height="24"/>
-        <image name="user_sel" width="24" height="24"/>
+        <image name="group" width="24" height="24"/>
+        <image name="group_sel" width="24" height="24"/>
     </resources>
 </document>

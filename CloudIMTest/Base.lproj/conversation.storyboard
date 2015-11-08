@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cA5-4I-ekk">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--最近会话-->
+        <!--MyQR Code Reader View Controller-->
+        <scene sceneID="eet-aM-av6">
+            <objects>
+                <viewController id="DSG-2h-Vaz" customClass="MyQRCodeReaderViewController" customModule="CloudIMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sbd-zP-E8E"/>
+                        <viewControllerLayoutGuide type="bottom" id="OpQ-Ii-hYz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pw3-6T-iBW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bz5-av-S6a">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="J8d-AX-GAw"/>
+                                    <constraint firstAttribute="height" constant="200" id="ShL-tt-fwg"/>
+                                </constraints>
+                                <state key="normal" title="扫一扫"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="DSG-2h-Vaz" eventType="touchUpInside" id="f10-a1-Lgc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bz5-av-S6a" firstAttribute="centerX" secondItem="Pw3-6T-iBW" secondAttribute="centerX" id="FRs-bP-78c"/>
+                            <constraint firstItem="Bz5-av-S6a" firstAttribute="centerY" secondItem="Pw3-6T-iBW" secondAttribute="centerY" id="rJq-bd-I44"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZi-s0-jBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="-535"/>
+        </scene>
+        <!--微信-->
         <scene sceneID="zUQ-Cg-09C">
             <objects>
                 <viewController id="e8H-k5-Ed1" customClass="ConversationListViewController" customModule="CloudIMTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="最近会话" id="Bp2-t9-aHb">
+                    <navigationItem key="navigationItem" title="微信" id="Bp2-t9-aHb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EcL-Hd-0KH">
                             <connections>
                                 <action selector="ShowMenu:" destination="e8H-k5-Ed1" id="sFh-qL-TDG"/>
@@ -26,6 +62,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="tapOnCellSegue" id="dJM-Ew-0p5"/>
+                        <segue destination="DSG-2h-Vaz" kind="show" identifier="toQRCodeReaderSegue" id="TQj-fO-XY7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D46-CR-ogn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,11 +88,11 @@
             </objects>
             <point key="canvasLocation" x="1977" y="159"/>
         </scene>
-        <!--会话-->
+        <!--微信-->
         <scene sceneID="hgN-NY-1yQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cA5-4I-ekk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="会话" image="group" id="ek9-MH-GyL"/>
+                    <tabBarItem key="tabBarItem" title="微信" image="message" selectedImage="message_sel" id="ek9-MH-GyL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="3Al-Vc-CKN">
@@ -73,6 +110,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="group" width="24" height="24"/>
+        <image name="message" width="29" height="23"/>
+        <image name="message_sel" width="29" height="23"/>
     </resources>
 </document>

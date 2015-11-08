@@ -1,4 +1,5 @@
 PODS:
+  - AVOSCloud (3.1.6.1)
   - JSAnimatedImagesView (1.0.0):
     - MSWeakTimer (~> 1.0)
   - KxMenu (1)
@@ -7,22 +8,30 @@ PODS:
   - PopMenu (2.4):
     - pop
     - XHRealTimeBlur
-  - RongCloudIMKit (2.3.3)
+  - QRCodeReader.swift (5.2.0)
+  - RongCloudIMKit (2.3.4)
+  - Validator (0.0.9)
   - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
+  - AVOSCloud
   - JSAnimatedImagesView
   - KxMenu
   - PopMenu
+  - QRCodeReader.swift (~> 5.2.0)
   - RongCloudIMKit (~> 2.3.2)
+  - Validator
 
 SPEC CHECKSUMS:
+  AVOSCloud: 8774e2c05f791cfce3c294d975b57fec330f9de1
   JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   PopMenu: 26b97baeaf250070f4f61b93727ca86d127d7bc5
-  RongCloudIMKit: 9e5814f1ada1bc679351e1d054413f1da68e4b21
+  QRCodeReader.swift: b678a94534bcf4b5223543a1400f321063dbcf2f
+  RongCloudIMKit: f7fce38683b41e480dfdff7672248855ecf5aee9
+  Validator: 9012664aa29024d8bc92a3504bb97406bc719601
   XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
 
 COCOAPODS: 0.39.0

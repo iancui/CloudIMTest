@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D827AE58B399297CC4014B17'
+               BlueprintIdentifier = 'B2D02FABC0470851EE607F28'
                BlueprintName = 'PopMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPopMenu.a'>
+               BuildableName = 'PopMenu.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

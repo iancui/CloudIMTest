@@ -26,11 +26,11 @@ class ConversationViewController: RCConversationViewController {
         self.conversationType = .ConversationType_PRIVATE
         self.title = userName
         
-        self.setMessageAvatarStyle(.USER_AVATAR_CYCLE)
         
+        self.setMessageAvatarStyle(.USER_AVATAR_RECTANGLE)
         
     }
-    
+  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

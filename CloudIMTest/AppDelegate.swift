@@ -41,10 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
         // 初始化
         RCIM.sharedRCIM().initWithAppKey("25wehl3uwkevw")
         
+
         // 用token测试连接
-        RCIM.sharedRCIM().connectWithToken("YvRMqlKuada0b0F7EB5xEMdQGsPYgPfSkPFZ/jhM6/9xtEabQPlqqht3IKP45blJP1dcQ+A9LnrjxSGa4NC0QQ==", success: { (_) -> Void in
+        RCIM.sharedRCIM().connectWithToken("UAznPGwCngNjW5P1UiV7csdQGsPYgPfSkPFZ/jhM6/8dm5sA6dsE3yMw2zEvUzD9P1dcQ+A9LnrjxSGa4NC0QQ==", success: { (_) -> Void in
             
-            let currentUser = RCUserInfo(userId: "iancui", name: "微忧", portrait: "")
+            let currentUser = RCUserInfo(userId: "iancui", name: "微忧", portrait: "http://p4.gexing.com/G1/M00/CA/43/rBABFFHflSKimYo7AAAZiDG7IEk793_200x200_3.jpg")
             
             RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
             
@@ -66,7 +67,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
 
         // 设置用户信息提供者为自己
         RCIM.sharedRCIM().userInfoDataSource = self
-
+//        RCIM.sharedRCIM().groupInfoDataSource = self
+        //如果使用美国站点，请加上这行代码 [AVOSCloud useAVCloudUS];
+        //        [AVOSCloud setApplicationId:@"xFCJERJwGqQeQubfqhFuYgzW"
+        //        clientKey:@"g0p6HU5cGcwwvskTbFJ9bDwv"];
+        AVOSCloud.setApplicationId("xFCJERJwGqQeQubfqhFuYgzW", clientKey: "g0p6HU5cGcwwvskTbFJ9bDwv")
+        //        如果想跟踪统计应用的打开情况，后面还可以添加下列代码：
+        //        [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
         return true
     }
 

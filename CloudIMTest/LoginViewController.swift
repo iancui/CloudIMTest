@@ -8,49 +8,94 @@
 
 import UIKit
 
-//extension UIView {
-//    @IBInspectable var cornerRadius:CGFloat{
-//        get {
-//            return layer.cornerRadius
-//        }
-//        
-//        set{
-//            layer.cornerRadius = newValue
-//            layer.masksToBounds = (newValue>0)
-//        }
-//    }
-//}
 
-class LoginViewController: UIViewController ,JSAnimatedImagesViewDataSource {
+class LoginViewController: UIViewController ,RCAnimatedImagesViewDelegate {
 
-    @IBOutlet weak var wallPaperImageView: JSAnimatedImagesView!
+
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var wallPaperImageView: RCAnimatedImagesView!
     @IBOutlet weak var loginStackView: UIStackView!
+    @IBAction func login(sender: AnyObject) {
+        
+        if signin() {
+     
+            self.performSegueWithIdentifier("toConversationListSegue", sender: self)
+        }
+        
+        
+    }
+    
+    func signin() -> Bool {
+        AVUser.logInWithUsernameInBackground(self.username.text, password: self.password.text) { (user, e) -> Void in
+            if user != nil{
+                
+            } else {
+            
+            }
+        }
+        return false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
-        self.wallPaperImageView.dataSource = self
+        self.wallPaperImageView.delegate = self
+        self.wallPaperImageView.startAnimating()
+        
+        
         
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(1) { () -> Void in
-            self.loginStackView.axis = .Vertical
-        }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+
+        self.view.endEditing(true)
+
     }
     
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        UIView.animateWithDuration(0.7) { () -> Void in
+            self.loginStackView.axis = .Vertical
+        }
+        
+        
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(true)
+        self.loginStackView.axis = .Horizontal
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationController?.navigationBar.hidden = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+    func animatedImagesNumberOfImages(animatedImagesView: RCAnimatedImagesView!) -> UInt {
         return 3
     }
     
-    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+    func animatedImagesView(animatedImagesView: RCAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
         return UIImage(named: "wall\(index + 1)")
     }
+//    
+//    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+//        return 3
+//    }
+//    
+//    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+//        return UIImage(named: "wall\(index + 1)")
+//    }
     
     
     

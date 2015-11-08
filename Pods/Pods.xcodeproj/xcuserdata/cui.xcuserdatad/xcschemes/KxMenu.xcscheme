@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7A43DEDE1250022DCB83B82E'
+               BlueprintIdentifier = '135B62CCB833065467932686'
                BlueprintName = 'KxMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libKxMenu.a'>
+               BuildableName = 'KxMenu.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

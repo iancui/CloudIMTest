@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CloudIMTest/ConversationViewController.swift"
-            timestampString = "467214301.780944"
+            timestampString = "467820462.499007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "loadUser()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,14 +25,61 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CloudIMTest/AppDelegate.swift"
-            timestampString = "467303560.560881"
+            filePath = "CloudIMTest/ConversationViewController.swift"
+            timestampString = "467820492.64585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "5">
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ConversationViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudIMTest.ConversationViewController.init (CloudIMTest.ConversationViewController.Type)(conversationType : __C.RCConversationType, targetId : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;CloudIMTest.ConversationViewController&gt;"
+                  moduleName = "CloudIMTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cui/Desktop/ios/CloudIMTest/CloudIMTest/ConversationViewController.swift"
+                  timestampString = "468563400.443543"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudIMTest.ConversationViewController.init (CloudIMTest.ConversationViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; CloudIMTest.ConversationViewController"
+                  moduleName = "CloudIMTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cui/Desktop/ios/CloudIMTest/CloudIMTest/ConversationViewController.swift"
+                  timestampString = "468563400.444215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudIMTest.ConversationViewController.init (CloudIMTest.ConversationViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CloudIMTest.ConversationViewController&gt;"
+                  moduleName = "CloudIMTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cui/Desktop/ios/CloudIMTest/CloudIMTest/ConversationViewController.swift"
+                  timestampString = "468563400.444588"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -41,30 +88,46 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CloudIMTest/AppDelegate.swift"
-            timestampString = "467302003.169203"
+            filePath = "CloudIMTest/RegTableViewController.swift"
+            timestampString = "468641646.248541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "getUserInfoWithUserId(_:completion:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "validate()"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CloudIMTest/ConversationListViewController.swift"
-            timestampString = "467389181.599287"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "ShowMenu(_:)"
-            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudIMTest.RegTableViewController.validate (CloudIMTest.RegTableViewController)() -&gt; ()"
+                  moduleName = "CloudIMTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cui/Desktop/ios/CloudIMTest/CloudIMTest/RegTableViewController.swift"
+                  timestampString = "468430294.672962"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "570">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudIMTest.RegTableViewController.(validate (CloudIMTest.RegTableViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "CloudIMTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cui/Desktop/ios/CloudIMTest/CloudIMTest/RegTableViewController.swift"
+                  timestampString = "468430294.673248"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -3,6 +3,9 @@
 //
 
 #include <RongIMKit/RongIMKit.h>
-#include <KxMenu.h>
-#include <PopMenu.h>
-#include <JSAnimatedImagesView.h>
+#include <KxMenu/KxMenu.h>
+//#include <PopMenu/PopMenu.h>
+#include <JSAnimatedImagesView/JSAnimatedImagesView.h>
+#include "RCAnimatedImagesView.h"
+#include "UIView+ViewRecursion.h"
+#import <AVOSCloud/AVOSCloud.h>

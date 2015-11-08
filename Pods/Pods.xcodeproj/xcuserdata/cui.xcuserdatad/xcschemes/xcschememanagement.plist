@@ -19,12 +19,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-CloudIMTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>PopMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>QRCodeReader.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Validator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3B9F271B4B74898D8BA3CD20F0954141</key>
+		<key>3640B873BBD6E3C6C7F674CCB888D1A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B2E2DFEAB9164C3966D663E68547E9C</key>
+		<key>374D10B460F80F01F0B187C7CFE135B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>610CB550D23723D065BFEABFF4934EF9</key>
+		<key>3B3C7E043402AE31E32F07A28778BD32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>640AE028A23036B9C997B8962E64D3BD</key>
+		<key>5689DBC1D9E1890F3636819BE949D0EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F06F49D64E04DCD9683D916034330CE</key>
+		<key>5AC31E28BDAFDB9297437CE16237AB9A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
+		<key>6820846829ED020BAD5FAE69FEDDC861</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1CD6950F8FD939BAD2EB89319C0AE5F</key>
+		<key>8C3655AB1446FF7228419AF5D68AF89E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B646134CADCE354BB6790B8D80DB0377</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6F5BB16BEDC610DF435FE20BD4F73BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
